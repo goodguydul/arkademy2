@@ -45,7 +45,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.php?page=crud/index"><b>ARKADEMI BOOTCAMP</b></a></li>
+            <li><a href="index.php"><b>ARKADEMI BOOTCAMP</b></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -53,17 +53,9 @@
 
 
     <div class="container">
-
       <?php
-      if(!empty($_GET['page'])){
-        include('views/'.$_GET['page'].'.php');
-      }else{
-      echo '<div class="jumbotron">
-        <p>Crud Ark</p>
-      </div>';
-      }
+        include('views/crud/index.php');
       ?>
-
     </div>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -71,7 +63,7 @@
 
     <!-- script ajax untuk create -->
     <script type="text/javascript">
-       $(function () {
+      $(function () {
         $('.form-data-user').on('submit', function (e) {
           var data = $('.form-data-user').serialize();
           e.preventDefault();
@@ -125,8 +117,7 @@
             });
           });
         });
-        }
-        
+        }      
     </script>
 
     <!-- script ajax untuk hapus -->
@@ -176,8 +167,10 @@
               }
             });                       
         });        
-    });
+      });
     </script>
+
+    <!-- script untuk memanggil bootbox -->
     <script type="text/javascript">
       function callBootbox(msg,ttl){
           bootbox.alert({
