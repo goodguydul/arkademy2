@@ -6,7 +6,7 @@
  
 **FUNGSI JSON PADA REST API**
 
- ```JSON pada REST API sebagai format untuk bertukar data server dan client, atau antar aplikasi.```
+ ```JSON pada REST API berfungsi sebagai format untuk bertukar data server dan client, atau antar aplikasi.```
  
 **DEMO/SNAPSHOT PROGRAM SOAL NOMOR 6**
 
