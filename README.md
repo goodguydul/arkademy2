@@ -29,29 +29,6 @@
  **DELETE**
   >![alt text](https://github.com/goodguydul/arkademy/blob/master/crud/docs/Screenshot_4.png)
   
-**QUERY MySQL SOAL NOMOR 6**
-
- |  Name   |     Work     |   Salary   |
- |---------|--------------|------------|
- | Rebecca | Frontend Dev | 10.000.000 |
- |  Vita   | Backend Dev  | 12.000.000 |
-
-**QUERY :**
- 
-  ``` 
-      SELECT nama.name as name, 
-             work.name as workname,
-             kategori.salary as salary 
-      FROM nama 
-      JOIN
-           work 
-      ON nama.id_work = work.id 
-      JOIN 
-           kategori 
-      ON nama.id_salary = kategori.id 
-  ```
-
-
 
 
 
