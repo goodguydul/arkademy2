@@ -78,6 +78,4 @@ print_r($x);
 // 	Assert that the Regex below matches
 // 	.{8,} matches any character (except for line terminators)
 // 	{8,} Quantifier — Matches between 8 and unlimited times, as many times as possible, giving back as needed (greedy)
-
-
 ?>
