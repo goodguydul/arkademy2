@@ -17,7 +17,9 @@
 
 
 	function is_usernameValid($username){
-		if (preg_match('/^[a-z]{5,9}$/', $username)) {// regex : hanya menerima alphabet lowercase dengan panjang min 5 max 9
+
+		// regex : hanya menerima alphabet lowercase dengan panjang min 5 max 9
+		if (preg_match('/^[a-z]{5,9}$/', $username)) {
 
 			return true; // kalau sesuai, maka return true/1
 
@@ -28,8 +30,10 @@
 	}
 	
 	function is_passwordValid($password){
+
+		//regex : hanya menerima aplhabet lowercase, uppercase min 1 char, numeric 1 char, dan special char min 1. (?=.*) << lookaround positive. 
 		if (preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/', $password)) {
-			//regex : hanya menerima aplhabet lowercase, uppercase min 1 char, numeric 1 char, dan special char min 1. (?=.*) << lookaround positive. 
+			
 			return true; // kalau sesuai, maka return true/1
 
 		}else{

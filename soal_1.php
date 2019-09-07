@@ -55,5 +55,5 @@
 
 print_r(getBiodata());
 
-//JSON pada REST API sebagai format untuk bertukar data server dan client, atau antar aplikasi.
+//JSON pada REST API berfungsi sebagai format untuk bertukar data server dan client, atau antar aplikasi.
 ?>
