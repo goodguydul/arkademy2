@@ -1,18 +1,9 @@
 <?php 
-	function soalKelima($string){
-		$pattern = ['pro', 'gram', 'merit', 'program', 'it', 'programmer'];
+	function countVowel($string){
+		// menggunakan regex yang mendeteksi huruf vokal a,i,u,e,o.
+		return preg_match_all('/[aiueo]/i',$string);
 
-		foreach ($pattern as $key ) {
-
-			if(strpos($string, $key) !== false) {
-				$hasil[] = $key; 
-			}
-
-		}
-		return $hasil;
 	}
 
-echo "<pre>";
-print_r(soalKelima("programit"));
-echo "</pre>"
+	echo countVowel("hmmm");
 ?>
